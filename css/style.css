@@ -302,6 +302,10 @@ body h5 {
   color: rgba(255, 255, 255, 0.9);
   font-size: 20px;
 }
+body h6 {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 20px;
+}
 body p,
 body blockquote {
   color: rgba(255, 255, 255, 0.7);
