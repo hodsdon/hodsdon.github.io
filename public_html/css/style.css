@@ -298,6 +298,10 @@ body h3,
 body h4 {
   color: rgba(255, 255, 255, 0.9);
 }
+body h5 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+}
 body p,
 body blockquote {
   color: rgba(255, 255, 255, 0.7);
