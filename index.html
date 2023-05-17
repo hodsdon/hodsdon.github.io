@@ -88,7 +88,7 @@
                     <!-- <h4>Ph.D. Student, Computer Science, Princeton University</h4> -->
                     <!-- <h3 id="about">About</h3> -->
                     <p>I completed a PhD in May 2023 in Computer Science at Princeton University in the 
-                       in the <a href="https://sns.cs.princeton.edu/">S* Network Systems group</a>
+                       <a href="https://sns.cs.princeton.edu/">S* Network Systems group</a>
                        advised by <a href="http://www.cs.princeton.edu/~wlloyd/">
                         Prof. Wyatt Lloyd</a> and <a href="http://www.columbia.edu/~ebk2141/">Prof. Ethan Katz-Bassett</a>
                         (Columbia University).
@@ -101,20 +101,34 @@
                     <p>I am interested in distributed systems
                         , including distributed databases, consistency, replicated state machines, fault tolerance, scalability, 
                         and networking in general.</p>
-                    <!-- <p>I am a seventh year CS Ph.D. student at Princeton University in the <a href="https://sns.cs.princeton.edu/">S* Network Systems group</a>
-                        advised by <a href="http://www.cs.princeton.edu/~wlloyd/">
-                        Prof. Wyatt Lloyd</a> and <a href="http://www.columbia.edu/~ebk2141/">Prof. Ethan Katz-Bassett</a>
-                        (Columbia University). Before moving to Princeton
-                        I was a member of the University of Southern California's <a href="https://nsl.cs.usc.edu/">
-                            Networked Systems Lab</a>.
-                        I am interested in distributed systems and networking in general.</p>
-                    <p>I received a B.A. in Mathematical Sciences from Rutgers University - Camden in 2016.</p> -->
+
                     <h3 id="projects">Projects and Publications</h3>
                     <!-- <h3 id="currentProject">Current Project</h3> -->
                     <!-- <h4>Contiguous, Scalable, Multi-Sequencing</h4> -->
+                    <h6><b>Christopher Hodsdon</b>, Khiem Ngo, Siddhartha Sen, Ethan Katz-Bassett, Wyatt Lloyd.
+                        "Avicenna: Counterfactual Evaluation for Slowdown Tolerance"
+                        <i>In submission.</i><br/>
+                        <!-- [paper still to be released] -->
+                        <!-- [<a href="https://github.com/princeton-sns/mason">code</a>] -->
+                        </h6>
+                        <p>
+                        <b>Abstract: </b><br/>Replicated state machines (RSMs) are used as a foundation for many distributed services.
+                         While existing RSM protocols tolerate failures, most do not tolerate slowdowns—a single slow machine can significantly slow the entire RSM.
+                        The few existing protocols that are slowdown tolerant all have additional inter-replica delays in the normal case.
+                        This additional latency is an unacceptable overhead in wide-area settings.
+                        </p> <p>
+                        This paper presents the first slowdown-tolerant RSM protocols that have comparable latency to the state-of-practice, Multi-Paxos, in the wide area.
+                        One protocol, Reactive Copilot, modifies Copilot replication to make it more reactive, bringing down its normal case latency to be comparable to Multi-Paxos.
+                        Avicenna, the second protocol and the primary focus of this paper, rethinks slowdown tolerance with a focus on fast reactivity.
+                        Central to Avicenna’s design is a technique for performing counterfactual evaluation of client latency with an alternative leader.
+                        Comparing actual client latencies with counterfactual latencies allows Avicenna to quickly and robustly react to slowdowns.
+                        Counterfactual evaluation trades off throughput so Avicenna includes mechanisms to reduce this overhead, notably including a hedging technique.
+                        Our evaluation shows that in the wide area Avicenna has latency comparable to Multi-Paxos, while robustly tolerating slowdowns.
+                        </p>
+ 
                     <h6><b>Christopher Hodsdon</b>, Theano Stavrinos, Ethan Katz-Bassett, Wyatt Lloyd.
                         "Mason: Scalable, Contiguous Sequencing for Building Consistent Services"
-                        Journal of Systems Research, 2023.<br/>
+                        <i>Journal of Systems Research, 2023.</i><br/>
                         [paper still to be released]
                         [<a href="https://github.com/princeton-sns/mason">code</a>]
                         </h6>
@@ -150,8 +164,9 @@
                         The contiguous multi-sequence abstraction is easy for distributed service developers to reason about while being flexible
                         enough for developers to specialize execution of their operations for better performance. We implement the abstraction in a multi-sequencing
                         subsystem that is also the the first scalable multi-sequencer.</p> -->
-                    <h6></color>Haonan Lu, <b>Christopher Hodsdon</b>, Khiem Ngo, Shuai Mu, Wyatt Lloyd. "The SNOW Theorem and Latency-Optimal Read-Only Transactions"
-                        OSDI 2016, Savannah, GA, November 2-4, 2016. <br/>
+                    <h6></color>Haonan Lu, <b>Christopher Hodsdon</b>, Khiem Ngo, Shuai Mu, Wyatt Lloyd. 
+                        "The SNOW Theorem and Latency-Optimal Read-Only Transactions"
+                        <i>OSDI 2016, Savannah, GA, November 2-4, 2016.</i><br/>
                         [<a href="http://www.cs.princeton.edu/~wlloyd/papers/snow-osdi16.pdf">paper</a>]
                         [<a href="https://www.cs.princeton.edu/~wlloyd/papers/snow-osdi16-talk-public.pdf">slides</a>]
                         [<a href="https://www.usenix.org/conference/osdi16/technical-sessions/presentation/lu">talk (Haonan Lu)</a>]
@@ -176,6 +191,12 @@
                     latency for read-only transactions and to understand their impact on overall throughput.
                     </p>
                     <h3 id="publications">Publications List</h3>
+<p>
+    <b>Christopher Hodsdon</b>, Khiem Ngo, Siddhartha Sen, Ethan Katz-Bassett, Wyatt Lloyd.
+                            "Avicenna: Counterfactual Evaluation for Slowdown Tolerance"
+                            <i>In submission.</i><br/>
+</p>
+
                     <p><b>Christopher Hodsdon</b>, Theano Stavrinos, Ethan Katz-Bassett, Wyatt Lloyd.
                         "Mason: Scalable, Contiguous Sequencing for Building Consistent Services"
                         Journal of Systems Research, 2023.<br/>
